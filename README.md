@@ -6,6 +6,4 @@
 
 ![1](assets/parrot.gif)
 
-![3](assets/arch.gif)
 
-![2](assets/parrot.gif)
