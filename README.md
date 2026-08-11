@@ -5,3 +5,5 @@
 </picture>
 
 ![](assets/parrot.gif)
+
+![](assets/arch.gif)
