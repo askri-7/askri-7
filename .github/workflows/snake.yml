@@ -1,6 +1,8 @@
 name: Generate Snake
 
 on:
+  schedule:
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -17,13 +19,6 @@ jobs:
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-
-      - name: Check what was generated
-        run: |
-          echo "Contents of dist/:"
-          ls -la dist/ || echo "dist/ does not exist"
-          echo "Contents of current directory:"
-          ls -la
 
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v4
